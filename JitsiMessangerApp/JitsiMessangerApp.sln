@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JitsiMessangerApp.iOS", "Ji
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JitsiMessangerApp", "JitsiMessangerApp\JitsiMessangerApp.csproj", "{C7DC8624-44EB-4BDC-82DE-C9E88B942A25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JitsiCore", "..\..\..\Desktop\Jitsi\JitsiCore\JitsiCore.csproj", "{45DDB690-AA34-4E31-9E92-470902EB5323}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JitsiCore", "JitsiCore\JitsiCore.csproj", "{45DDB690-AA34-4E31-9E92-470902EB5323}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
