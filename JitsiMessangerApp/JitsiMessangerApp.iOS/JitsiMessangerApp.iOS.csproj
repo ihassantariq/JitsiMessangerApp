@@ -26,6 +26,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchExtraArgs>--framework:/../JitsIosSDKs/JitsiMeet.Framework</MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -128,6 +129,10 @@
     <ProjectReference Include="..\JitsiMessangerApp\JitsiMessangerApp.csproj">
       <Project>{C7DC8624-44EB-4BDC-82DE-C9E88B942A25}</Project>
       <Name>JitsiMessangerApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JitsiIOsSDK\JitsiIOsSDK.csproj">
+      <Project>{7B18F90B-6120-4C54-AB7C-608FB5882AEE}</Project>
+      <Name>JitsiIosSDK</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
