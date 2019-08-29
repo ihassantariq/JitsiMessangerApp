@@ -6,7 +6,6 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Org.Jitsi.Meet.Sdk;
 using Android.Content;
 
 namespace JitsiMessangerApp.Droid
