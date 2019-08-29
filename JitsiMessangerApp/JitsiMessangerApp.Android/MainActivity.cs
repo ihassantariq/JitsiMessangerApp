@@ -7,32 +7,35 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Content;
+using Org.Jitsi.Meet;
+using Org.Jitsi.Meet.Sdk;
+using Android.Support.V4.App;
 
 namespace JitsiMessangerApp.Droid
 {
     [Activity(Label = "JitsiMessangerApp", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    public class MainActivity : FragmentActivity
     {
         JitsiMeetView view;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
+            //TabLayoutResource = Resource.Layout.Tabbar;
+            //ToolbarResource = Resource.Layout.Toolbar;
             base.OnCreate(savedInstanceState);
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            //Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            //global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
 
-            view = new JitsiMeetView(Application.Context);
+            view = new JitsiMeetView(this);
             JitsiMeetConferenceOptions options = new JitsiMeetConferenceOptions.Builder()
-                .SetRoom("https://meet.jit.si/AngryLemonsAnswerFerociously")
+                .SetRoom("https://meet.jit.si/test123")
                 .Build();
             view.Join(options);
             SetContentView(view);
 
 
-            LoadApplication(new App());
+           // LoadApplication(new App());
 
         }
 
