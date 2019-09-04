@@ -7,9 +7,10 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
- <remove-node path="/api/package[@name='kotlin.collections']" />
+  <remove-node path="/api/package[@name='kotlin.collections']" />
   <remove-node path="/api/package[@name='com.facebook.common.executors']/interface[@name='HandlerExecutorService']" />
   <remove-node path="/api/package[@name='com.facebook.common.executors']" />
+  <remove-node path="/api/package[starts-with(@name='kotlin')]" />
   <remove-node path="/api/package[@name='kotlin']/class[@name='Result']" />
   <remove-node path="/api/package[@name='kotlin']/class[@name='UByte']" />
   <remove-node path="/api/package[@name='kotlin']/class[@name='UByteArray']" />
@@ -17,7 +18,6 @@
   <remove-node path="/api/package[@name='kotlin']/class[@name='UIntArray']" />
   <remove-node path="/api/package[@name='kotlin']/class[@name='ULong']" />
   <remove-node path="/api/package[@name='kotlin']/class[@name='ULongArray']" />
-  <remove-node path="/api/package[@name='kotlin']/class[@name='Unsignedkt']" />
   <remove-node path="/api/package[@name='kotlin']/class[@name='UShort']" />
   <remove-node path="/api/package[@name='kotlin']/class[@name='UShortArray']" />
   <remove-node path="/api/package[@name='androidx.appcompat.graphics.drawable']" />
@@ -37,4 +37,5 @@
   <remove-node path="/api/package[starts-with(@name='Com.Dropbox.Core')]" />
   <remove-node path="/api/package[starts-with(@name='Com.Fasterxml.Jackson')]" />
   <remove-node path="/api/package[starts-with(@name='Com.Google.Android.Gms.Auth')]" />
+ 
 </metadata>
