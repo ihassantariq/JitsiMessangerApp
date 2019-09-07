@@ -6,7 +6,7 @@
   
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+ -->
   <remove-node path="/api/package[@name='kotlin.collections']" />
   <remove-node path="/api/package[@name='com.facebook.common.executors']/interface[@name='HandlerExecutorService']" />
   <remove-node path="/api/package[@name='com.facebook.common.executors']" />

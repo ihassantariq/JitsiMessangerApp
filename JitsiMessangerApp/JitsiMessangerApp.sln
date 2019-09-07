@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JitsiMeetIos", "JitsiMeetIo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JitsiMeetIosSample", "JitsiMeetIosSample\JitsiMeetIosSample.csproj", "{953AE27E-F9E4-47D7-9362-F15DB268447B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JitsiAndroidSDKBinding", "JitsiAndroidSDKBinding\JitsiAndroidSDKBinding.csproj", "{55AF0D2B-0593-4D89-9235-C0C09624FB0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,18 @@ Global
 		{953AE27E-F9E4-47D7-9362-F15DB268447B}.Release|iPhone.Build.0 = Release|iPhone
 		{953AE27E-F9E4-47D7-9362-F15DB268447B}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{953AE27E-F9E4-47D7-9362-F15DB268447B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Release|iPhone.Build.0 = Release|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{55AF0D2B-0593-4D89-9235-C0C09624FB0D}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

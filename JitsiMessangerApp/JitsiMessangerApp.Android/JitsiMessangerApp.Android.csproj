@@ -30,12 +30,15 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidLinkMode>Full</AndroidLinkMode>
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <MandroidI18n />
+    <AndroidSupportedAbis>x86;x86_64;arm64-v8a</AndroidSupportedAbis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,9 +60,6 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="ReactNative.Forms.Droid">
-      <Version>1.0.55</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
@@ -106,13 +106,13 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\JitsiAndroidSDKBinding\JitsiAndroidSDKBinding.csproj">
+      <Project>{55af0d2b-0593-4d89-9235-c0c09624fb0d}</Project>
+      <Name>JitsiAndroidSDKBinding</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JitsiMessangerApp\JitsiMessangerApp.csproj">
       <Project>{C7DC8624-44EB-4BDC-82DE-C9E88B942A25}</Project>
       <Name>JitsiMessangerApp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\JitsiCore\JitsiAndroidSDK.csproj">
-      <Project>{45DDB690-AA34-4E31-9E92-470902EB5323}</Project>
-      <Name>JitsiAndroidSDK</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
