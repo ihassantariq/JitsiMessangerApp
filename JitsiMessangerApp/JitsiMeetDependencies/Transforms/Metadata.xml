@@ -1,0 +1,310 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <!-- DropBox-->
+  
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.files']/class[@name='AlphaUploadBuilder']" />
+  
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.files']/class[@name='AlphaUploadUploader']" />
+
+  <remove-node path="/api/package[@name='com.dropbox.core.util']/class[@name='Collector.ArrayListCollector']" />
+
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.paper']/class[@name='DocsCreateUploader']" />
+
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.paper']/class[@name='DocsUpdateUploader']" />
+
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.files']/class[@name='UploadBuilder']" />
+
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.files']/class[@name='UploadSessionAppendUploader']" />
+
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.files']/class[@name='UploadSessionAppendV2Uploader']" />
+
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.files']/class[@name='UploadSessionFinishUploader']" />
+
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.files']/class[@name='UploadSessionStartUploader']/method[@name='newException' and count(parameter)=1 and parameter[1][@type='com.dropbox.core.DbxWrappedException']]" />
+
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.files']/class[@name='UploadSessionStartUploader']" />
+
+  <remove-node path="/api/package[@name='com.dropbox.core.v2.files']/class[@name='UploadUploader']" />
+
+  <remove-node path="/api/package[@name='org.bouncycastle.x509']/interface[@name='X509AttributeCertificate']" />
+
+  <remove-node path="/api/package[@name='org.bouncycastle.crypto.tls']/class[@name='BulkCipherAlgorithm']" />
+
+  <remove-node path="/api/package[@name='']/class[@name='dbusjava_localized']" />
+
+  <remove-node path="/api/package[@name='']/class[@name='dbusjava_localized_en_GB']" />
+
+  <remove-node path="/api/package[@name='org.freedesktop.dbus']/class[@name='DBusConnection.PeerSet']" />
+
+  <remove-node path="/api/package[@name='org.freedesktop.dbus']/class[@name='Path']" />
+
+  <remove-node path="/api/package[@name='org.freedesktop.dbus']/class[@name='Path']/field[@name='path']" />
+
+  <remove-node path="/api/package[@name='org.freedesktop.dbus']/class[@name='UInt16']" />
+
+  <remove-node path="/api/package[@name='org.freedesktop.dbus']/class[@name='UInt32']" />
+
+  <remove-node path="/api/package[@name='org.freedesktop.dbus']/class[@name='UInt64']" />
+  
+  <remove-node path="/api/package[@name='org.freedesktop.dbus']/class[@name='Message']/method[@name='getFlags' and count(parameter)=0]" />
+
+  <remove-node path="/api/package[@name='org.freedesktop.dbus']/class[@name='AbstractConnection']/field[@name='pendingCalls']" />
+
+  <remove-node path="/api/package[@name='org.freedesktop.dbus']/class[@name='Message']/field[@name='flags']" />
+
+  <remove-node path="/api/package[@name='okhttp3.internal.http2']/class[@name='Http2Connection.PingRunnable']/method[@name='execute' and count(parameter)=0]" />
+
+  <remove-node path="/api/package[@name='com.amplitude.security']/class[@name='MD5']/method[@name='engineDigest' and count(parameter)=0]" />
+
+  <remove-node path="/api/package[@name='com.amplitude.security']/class[@name='MD5']/method[@name='engineUpdate' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" />
+
+  <remove-node path="/api/package[@name='com.amplitude.security']/class[@name='MD5']/method[@name='engineUpdate' and count(parameter)=1 and parameter[1][@type='byte']]" />
+
+  <remove-node path="/api/package[@name='okio']/class[@name='Options']" />
+
+  <remove-node path="/api/package[@name='okhttp3.internal.ws']/class[@name='RealWebSocket']" />
+
+  <remove-node path="/api/package[@name='com.amplitude.api']/class[@name='AmplitudeClient']/field[@name='dbHelper']" />
+
+  <remove-node path="/api/package[@name='okio']/class[@name='Buffer']" />
+
+  <remove-node path="/api/package[@name='okhttp3.internal.http2']/class[@name='Http2Connection.PingRunnable']" />
+
+  <remove-node path="/api/package[@name='com.amplitude.security']/class[@name='MD5']" />
+  
+  <!-- Remove 3rd parties from binding -->
+  <remove-node path="/api/package[@name='javax.inject']" />
+  <remove-node path="/api/package[contains(@name, 'javax.annotation')]" />
+  <!-- Bolts -->
+  <remove-node path="/api/package[@name='bolts']" />
+  <!-- Okio -->
+  
+  <!-- Fresco Core -->
+  <remove-node path="/api/package[@name='com.facebook.common.executors']/interface[@name='HandlerExecutorService']" />
+  <remove-node path="/api/package[@name='com.facebook.common.executors']/interface[@name='SerialExecutorService']" />
+  <remove-node path="/api/package[@name='com.facebook.common.executors']/class[@name='ScheduledFutureImpl']" />
+  <remove-node path="/api/package[@name='com.facebook.datasource']/class[@name='FirstAvailableDataSourceSupplier']" />
+  <remove-node path="/api/package[@name='com.facebook.datasource']/class[@name='IncreasingQualityDataSourceSupplier']" />
+  <!-- Fresco Drawee -->
+  <remove-node path="/api/package[@name='com.facebook.drawee.controller']" />
+  <remove-node path="/api/package[@name='com.facebook.drawee.drawable']" />
+  <remove-node path="/api/package[@name='com.facebook.cache.disk']" />
+  <remove-node path="/api/package[contains(@name, 'com.facebook.imagepipeline')]" />
+  <!--
+	    ReactJavaNetCookieJar
+	-->
+  <!-- BuildConfig -->
+  <!-- auto generated file should really not be distributed -->
+  <remove-node path="/api/package[@name='com.facebook.react']/class[@name='BuildConfig']" />
+  <!-- IAndroidView -->
+  <remove-node path="/api/package[@name='com.facebook.react.flat']/class[@name='RCTTextInput']" />
+  <!-- ForwardingCookieHandler -->
+  <remove-node path="/api/package[@name='com.facebook.react.modules.network']/class[@name='ForwardingCookieHandler']" />
+  <!-- GuardedAsyncTask -->
+  <remove-node path="/api/package[@name='com.facebook.react.bridge']/class[@name='GuardedAsyncTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='Params...']]" />
+  <!-- JavaOnlyArray -->
+  <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='JavaOnlyArray']/method[@name='getMap' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableMap</attr>
+  <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='JavaOnlyArray']/method[@name='getArray' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableArray</attr>
+  <!-- JavaOnlyMap -->
+  <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='JavaOnlyMap']/method[@name='getMap' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableMap</attr>
+  <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='JavaOnlyMap']/method[@name='getArray' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableArray</attr>
+  <!-- ReadableNativeArray -->
+  <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='ReadableNativeArray']/method[@name='getMap' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableMap</attr>
+  <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='ReadableNativeArray']/method[@name='getArray' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableArray</attr>
+  <!-- ReadableNativeMap -->
+  <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='ReadableNativeMap']/method[@name='getMap' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableMap</attr>
+  <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='ReadableNativeMap']/method[@name='getArray' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableArray</attr>
+  <!-- AnmationDriver -->
+  <attr path="/api/package[@name='com.facebook.react.animated']/class[@name='AnimationDriver']" name="visibility">public</attr>
+  <!-- VirtualViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.flat']/class[@name='VirtualViewManager']" name="visibility">public</attr>
+  <!-- RCTVirtualText -->
+  <attr path="/api/package[@name='com.facebook.react.flat']/class[@name='RCTVirtualText']" name="visibility">public</attr>
+  <!-- FlatShadowNode -->
+  <attr path="/api/package[@name='com.facebook.react.flat']/class[@name='FlatShadowNode']" name="visibility">public</attr>
+  <!-- FlatTextShadowNode -->
+  <attr path="/api/package[@name='com.facebook.react.flat']/class[@name='FlatTextShadowNode']" name="visibility">public</attr>
+  <!-- FontStylingSpan -->
+  <attr path="/api/package[@name='com.facebook.react.flat']/class[@name='FontStylingSpan']" name="visibility">public</attr>
+  <!-- FlatViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.flat']/class[@name='FlatViewManager']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.facebook.react.flat']/class[@name='FlatViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <!-- FlatARTSutfaceViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.flat']/class[@name='FlatARTSurfaceViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <remove-node path="/api/package[@name='com.facebook.react.flat']/class[@name='FlatARTSurfaceViewManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='com.facebook.react.views.art.ARTSurfaceView'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.flat']/class[@name='FlatARTSurfaceViewManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- ARTRenderableViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTRenderableViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <remove-node path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTRenderableViewManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='android.view.View'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTRenderableViewManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- RootViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.uimanager']/class[@name='RootViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <!-- ReactViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.view']/class[@name='ReactViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.facebook.react.views.view']/class[@name='ReactViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="visibility">protected</attr>
+  <!-- ARTSurfaceViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTSurfaceViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <remove-node path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTSurfaceViewManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='com.facebook.react.views.art.ARTSurfaceView'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.views.art']/class[@name='ARTSurfaceViewManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- ReactVirtualTextViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactVirtualTextViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactVirtualTextViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="visibility">protected</attr>
+  <remove-node path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactVirtualTextViewManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='android.view.View'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactVirtualTextViewManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- ReactTextViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactTextViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactTextViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="visibility">protected</attr>
+  <remove-node path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactTextViewManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='com.facebook.react.views.text.ReactTextView'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactTextViewManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- RCTTextInlineImageManager -->
+  <remove-node path="/api/package[@name='com.facebook.react.flat']/class[@name='RCTTextInlineImageManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='android.view.View'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.flat']/class[@name='RCTTextInlineImageManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- ReactImageManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.image']/class[@name='ReactImageManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.facebook.react.views.image']/class[@name='ReactImageManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="visibility">protected</attr>
+  <!-- ReactTextInputManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.textinput']/class[@name='ReactTextInputManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.facebook.react.views.textinput']/class[@name='ReactTextInputManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="visibility">protected</attr>
+  <remove-node path="/api/package[@name='com.facebook.react.views.textinput']/class[@name='ReactTextInputManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='com.facebook.react.views.textinput.ReactEditText'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.views.textinput']/class[@name='ReactTextInputManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- VirtualViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.flat']/class[@name='VirtualViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <remove-node path="/api/package[@name='com.facebook.react.flat']/class[@name='VirtualViewManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='android.view.View'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.flat']/class[@name='VirtualViewManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- RCTVirtualTextManager -->
+  <remove-node path="/api/package[@name='com.facebook.react.flat']/class[@name='RCTVirtualTextManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='android.view.View'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.flat']/class[@name='RCTVirtualTextManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- RCTVirtualText -->
+  <remove-node path="/api/package[@name='com.facebook.react.flat']/class[@name='RCTVirtualText']/method[@name='addChildAt' and count(parameter)=2 and parameter[1][@type='com.facebook.react.uimanager.ReactShadowNode'] and parameter[2][@type='int']]" />
+  <add-node path="/api/package[@name='com.facebook.react.flat']/class[@name='RCTVirtualText']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="addChildAt" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="p0" type="java.lang.Object" />
+      <parameter name="p1" type="int" />
+    </method>
+  </add-node>
+  <!-- ReactShadowNode -->
+  <remove-node path="/api/package[@name='com.facebook.react.uimanager']/interface[@name='ReactShadowNode']/method[@name='setRootNode' and count(parameter)=1 and parameter[1][@type='T']]" />
+  <add-node path="/api/package[@name='com.facebook.react.uimanager']/interface[@name='ReactShadowNode']">
+    <method abstract="false" deprecated="not deprecated" final="true" name="setRootNode" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="rootNode" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- ReactRawTextManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactRawTextManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactRawTextManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="visibility">protected</attr>
+  <remove-node path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactRawTextManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='android.view.View'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.views.text']/class[@name='ReactRawTextManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- RCTRawTextManager -->
+  <remove-node path="/api/package[@name='com.facebook.react.flat']/class[@name='RCTRawTextManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='android.view.View'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.flat']/class[@name='RCTRawTextManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- FrescoBasedReactTextInlineImageViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.text.frescosupport']/class[@name='FrescoBasedReactTextInlineImageViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.facebook.react.views.text.frescosupport']/class[@name='FrescoBasedReactTextInlineImageViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="visibility">protected</attr>
+  <remove-node path="/api/package[@name='com.facebook.react.views.text.frescosupport']/class[@name='FrescoBasedReactTextInlineImageViewManager']/method[@name='updateExtraData' and count(parameter)=2 and parameter[1][@type='android.view.View'] and parameter[2][@type='java.lang.Object']]" />
+  <add-node path="/api/package[@name='com.facebook.react.views.text.frescosupport']/class[@name='FrescoBasedReactTextInlineImageViewManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- ReactProgressBarViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.progressbar']/class[@name='ReactProgressBarViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <add-node path="/api/package[@name='com.facebook.react.views.progressbar']/class[@name='ReactProgressBarViewManager']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="updateExtraData" native="false" return="void" static="false" synchronized="false" visibility="public">
+      <parameter name="root" type="java.lang.Object" />
+      <parameter name="extraData" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <!-- ReactWebViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.webview']/class[@name='ReactWebViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <!-- ReactDialogPickerManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.picker']/class[@name='ReactDialogPickerManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <!-- ReactDropdownPickerManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.picker']/class[@name='ReactDropdownPickerManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <!-- ReactModalHostManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.modal']/class[@name='ReactModalHostManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <!-- ReactCheckBoxManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.checkbox']/class[@name='ReactCheckBoxManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <!-- ReactScrollViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.scroll']/class[@name='ReactScrollViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.facebook.react.views.scroll']/class[@name='ReactScrollViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="visibility">protected</attr>
+  <!-- ReactHorizontalScrollViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.scroll']/class[@name='ReactHorizontalScrollViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.facebook.react.views.scroll']/class[@name='ReactHorizontalScrollViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="visibility">protected</attr>
+  <!-- ReactHorizontalScrollContainerViewManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.scroll']/class[@name='ReactHorizontalScrollContainerViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.facebook.react.views.scroll']/class[@name='ReactHorizontalScrollContainerViewManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="visibility">protected</attr>
+  <!-- ReactSliderManager -->
+  <attr path="/api/package[@name='com.facebook.react.views.slider']/class[@name='ReactSliderManager']/method[@name='createViewInstance' and count(parameter)=1 and parameter[1][@type='com.facebook.react.uimanager.ThemedReactContext']]" name="managedReturn">Java.Lang.Object</attr>
+
+  <!--Okhttp3 -->
+  <remove-node path="/api/package[@name='okhttp3.internal.huc']/class[@name='OkHttpsURLConnection']/method[@name='getHeaderFields' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='okhttp3.internal.huc']/class[@name='OkHttpsURLConnection']/method[@name='getRequestProperties' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='okhttp3.internal.huc']/class[@name='OkHttpsURLConnection']/method[@name='getResponseCode' and count(parameter)=0]" />
+
+  <remove-node path="/api/package[@name='okio']/class[@name='-Base64']" />
+
+  
+</metadata>

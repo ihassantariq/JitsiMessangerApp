@@ -7,9 +7,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Content;
-using Org.Jitsi.Meet;
-using Org.Jitsi.Meet.Sdk;
 using Android.Support.V4.App;
+using Org.Jitsi.Meet.Sdk;
 
 namespace JitsiMessangerApp.Droid
 {
@@ -26,7 +25,7 @@ namespace JitsiMessangerApp.Droid
             //Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             //global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
-
+            
             view = new JitsiMeetView(this);
             JitsiMeetConferenceOptions options = new JitsiMeetConferenceOptions.Builder()
                 .SetRoom("https://meet.jit.si/test123")

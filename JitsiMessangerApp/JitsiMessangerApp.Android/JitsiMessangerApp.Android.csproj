@@ -38,7 +38,8 @@
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
     <AndroidDexTool>d8</AndroidDexTool>
     <MandroidI18n />
-    <AndroidSupportedAbis>x86;x86_64;arm64-v8a</AndroidSupportedAbis>
+    <AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
+    <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -60,6 +61,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="ReactNative.Forms.Droid">
+      <Version>1.0.55</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
@@ -106,13 +110,73 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JitsiAndroidSDKBinding\JitsiAndroidSDKBinding.csproj">
-      <Project>{55af0d2b-0593-4d89-9235-c0c09624fb0d}</Project>
-      <Name>JitsiAndroidSDKBinding</Name>
+    <ProjectReference Include="..\JitsiCore\JitsiAndroidSDK.csproj">
+      <Project>{45ddb690-aa34-4e31-9e92-470902eb5323}</Project>
+      <Name>JitsiAndroidSDK</Name>
     </ProjectReference>
     <ProjectReference Include="..\JitsiMessangerApp\JitsiMessangerApp.csproj">
       <Project>{C7DC8624-44EB-4BDC-82DE-C9E88B942A25}</Project>
       <Name>JitsiMessangerApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeBackgroundTimer\ReactNativeBackgroundTimer.csproj">
+      <Project>{3eb71994-3c27-4bb2-8844-8a1ff1e7a41a}</Project>
+      <Name>ReactNativeBackgroundTimer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeCalendarEvents\ReactNativeCalendarEvents.csproj">
+      <Project>{bc7edc33-4aa9-428d-9df7-ef5ab6021ae1}</Project>
+      <Name>ReactNativeCalendarEvents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeCommunityAsyncStorage\ReactNativeCommunityAsyncStorage.csproj">
+      <Project>{648241b9-2d32-4165-8f26-2735c4ec5605}</Project>
+      <Name>ReactNativeCommunityAsyncStorage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeFastImage\ReactNativeFastImage.csproj">
+      <Project>{e7404ec4-7188-4409-9e67-aae83174a3f4}</Project>
+      <Name>ReactNativeFastImage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeFetchBlob\ReactNativeFetchBlob.csproj">
+      <Project>{2ff1bc52-95e2-4750-8eef-7b296596ef95}</Project>
+      <Name>ReactNativeFetchBlob</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeGoogleSignin\ReactNativeGoogleSignin.csproj">
+      <Project>{ff52efbc-564e-4e59-bc85-97d1165aacf1}</Project>
+      <Name>ReactNativeGoogleSignin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeImmersive\ReactNativeImmersive.csproj">
+      <Project>{c3c53a54-c669-483e-9692-aa9ca3ce9971}</Project>
+      <Name>ReactNativeImmersive</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeJitsiDependencies\ReactNativeKeepAwake.csproj">
+      <Project>{81168e99-3e6c-4041-afb2-5b7c9bd35e3c}</Project>
+      <Name>ReactNativeKeepAwake</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeLinearGradient\ReactNativeLinearGradient.csproj">
+      <Project>{5f0fd4f0-5383-4f21-83a1-eb1459bc5c22}</Project>
+      <Name>ReactNativeLinearGradient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeLocaleDetector\ReactNativeLocaleDetector.csproj">
+      <Project>{b3a27d1e-993f-4d68-9305-2c6f3c00d889}</Project>
+      <Name>ReactNativeLocaleDetector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeSound\ReactNativeSound.csproj">
+      <Project>{0fc7de5e-15ec-413d-b442-afa1aa80bd07}</Project>
+      <Name>ReactNativeSound</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeVectorIcons\ReactNativeVectorIcons.csproj">
+      <Project>{dce6b7d2-a9d0-4469-955d-96641dd4cc05}</Project>
+      <Name>ReactNativeVectorIcons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeWebrtc\ReactNativeWebrtc.csproj">
+      <Project>{e806bfc1-fd3f-47d2-8dbc-bd250d2ed61d}</Project>
+      <Name>ReactNativeWebrtc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeWebview\ReactNativeWebview.csproj">
+      <Project>{42645c07-7a3a-48ca-9003-7bb342cd2635}</Project>
+      <Name>ReactNativeWebview</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeleniumGridExtras\SeleniumGridExtras.csproj">
+      <Project>{553fc3a4-54cc-428b-98ed-c291b2f465fb}</Project>
+      <Name>SeleniumGridExtras</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

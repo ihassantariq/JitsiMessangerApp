@@ -6,36 +6,38 @@
   
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+
  -->
-  <remove-node path="/api/package[@name='kotlin.collections']" />
-  <remove-node path="/api/package[@name='com.facebook.common.executors']/interface[@name='HandlerExecutorService']" />
-  <remove-node path="/api/package[@name='com.facebook.common.executors']" />
-  <remove-node path="/api/package[starts-with(@name='kotlin')]" />
-  <remove-node path="/api/package[@name='kotlin']/class[@name='Result']" />
-  <remove-node path="/api/package[@name='kotlin']/class[@name='UByte']" />
-  <remove-node path="/api/package[@name='kotlin']/class[@name='UByteArray']" />
-  <remove-node path="/api/package[@name='kotlin']/class[@name='UInt']" />
-  <remove-node path="/api/package[@name='kotlin']/class[@name='UIntArray']" />
-  <remove-node path="/api/package[@name='kotlin']/class[@name='ULong']" />
-  <remove-node path="/api/package[@name='kotlin']/class[@name='ULongArray']" />
-  <remove-node path="/api/package[@name='kotlin']/class[@name='UShort']" />
-  <remove-node path="/api/package[@name='kotlin']/class[@name='UShortArray']" />
-  <remove-node path="/api/package[@name='androidx.appcompat.graphics.drawable']" />
-  <remove-node path="/api/package[@name='androidx.appcompat.view.menu']" />
-  <remove-node path="/api/package[@name='androidx.appcompat.view']" />
-  <remove-node path="/api/package[@name='androidx.appcompat.widget']" />
-  <remove-node path="/api/package[@name='androidx.coordinatorlayout.widget']" />
-  <remove-node path="/api/package[@name='androidx.core.app']" />
-  <remove-node path="/api/package[@name='androidx.core.content.res']" />
-  <remove-node path="/api/package[@name='androidx.core.graphics.drawable']" />
-  <remove-node path="/api/package[@name='androidx.core.internal.view']" />
-  <remove-node path="/api/package[@name='androidx.core']" />
-  <remove-node path="/api/package[@name='androidx.collection']" />
-  <remove-node path="/api/package[starts-with(@name='co.apptailor')]" />
-  <remove-node path="/api/package[starts-with(@name='Com.Bumptech.Glide')]" />
-  <remove-node path="/api/package[starts-with(@name='Com.BV.LinearGradientManager')]" />
-  <remove-node path="/api/package[starts-with(@name='Com.Dropbox.Core')]" />
-  <remove-node path="/api/package[starts-with(@name='Com.Fasterxml.Jackson')]" />
-  <remove-node path="/api/package[starts-with(@name='Com.Google.Android.Gms.Auth')]" />
- 
+  
+  <!-- NAT64AddrInfoModule-->
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk.net']/class[@name='NAT64AddrInfoModule']/method[@name='getName' and count(parameter)=0]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk.net']/class[@name='NAT64AddrInfoModule']" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk']/class[@name='JitsiMeetActivityDelegate']/method[@name='requestPermissions' and count(parameter)=4 and parameter[1][@type='android.app.Activity'] and parameter[2][@type='java.lang.String[]'] and parameter[3][@type='int'] and parameter[4][@type='com.facebook.react.modules.core.PermissionListener']]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk.net']/class[@name='NAT64AddrInfoModule']/method[@name='getIPv6Address' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='com.facebook.react.bridge.Promise']]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk']/class[@name='BaseReactView']/method[@name='onExternalAPIEvent' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='com.facebook.react.bridge.ReadableMap']]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk']/class[@name='BaseReactView']/method[@name='onExternalAPIEvent' and count(parameter)=3 and parameter[1][@type='java.util.Map&lt;java.lang.String, java.lang.reflect.Method&gt;'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='com.facebook.react.bridge.ReadableMap']]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk']/class[@name='BaseReactView']/method[@name='onExternalAPIEvent' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='com.facebook.react.bridge.ReadableMap']]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk.incoming_call']/class[@name='IncomingCallView']/method[@name='onExternalAPIEvent' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='com.facebook.react.bridge.ReadableMap']]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk']/class[@name='JitsiMeetView']/method[@name='onExternalAPIEvent' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='com.facebook.react.bridge.ReadableMap']]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk']/class[@name='ListenerUtils']/method[@name='runListenerMethod' and count(parameter)=4 and parameter[1][@type='java.lang.Object'] and parameter[2][@type='java.util.Map&lt;java.lang.String, java.lang.reflect.Method&gt;'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='com.facebook.react.bridge.ReadableMap']]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk.net']/class[@name='NAT64AddrInfoModule']/constructor[@name='NAT64AddrInfoModule' and count(parameter)=1 and parameter[1][@type='com.facebook.react.bridge.ReactApplicationContext']]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk.net']/class[@name='NAT64AddrInfoModule']" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk']/class[@name='JitsiMeetActivity']/method[@name='requestPermissions' and count(parameter)=3 and parameter[1][@type='java.lang.String[]'] and parameter[2][@type='int'] and parameter[3][@type='com.facebook.react.modules.core.PermissionListener']]" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk']/interface[@name='JitsiMeetActivityInterface']" />
+
+  <remove-node path="/api/package[@name='org.jitsi.meet.sdk']/interface[@name='JitsiMeetActivityInterface']" />
+
 </metadata>

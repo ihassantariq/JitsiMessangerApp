@@ -1,0 +1,90 @@
+<metadata>
+
+  <!--   
+ 
+
+    <attr path="/api/package[@name='com.squareup.okhttp']" name="managedName">OkHttp</attr>
+    <attr path="/api/package[@name='okio']" name="managedName">okio</attr>
+ 
+  -->
+  <!--
+  <remove-node path="/api/package[starts-with(@name, 'com.squareup.okhttp.internal')]" />
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='write' and count(parameter)=1 and parameter[1][@type='byte[]']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='write' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='write' and count(parameter)=1 and parameter[1][@type='okio.ByteString']]"
+        name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='emitCompleteSegments' and count(parameter)=0]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeByte' and count(parameter)=1 and parameter[1][@type='int']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeInt' and count(parameter)=1 and parameter[1][@type='int']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeIntLe' and count(parameter)=1 and parameter[1][@type='int']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeLong' and count(parameter)=1 and parameter[1][@type='long']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeLongLe' and count(parameter)=1 and parameter[1][@type='long']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeShort' and count(parameter)=1 and parameter[1][@type='int']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeShortLe' and count(parameter)=1 and parameter[1][@type='int']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeString' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.nio.charset.Charset']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeTo' and count(parameter)=1 and parameter[1][@type='java.io.OutputStream']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeTo' and count(parameter)=2 and parameter[1][@type='java.io.OutputStream'] and parameter[2][@type='long']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeUtf8' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeDecimalLong' and count(parameter)=1 and parameter[1][@type='long']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeByte' and count(parameter)=1 and parameter[1][@type='int']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']/method[@name='writeHexadecimalUnsignedLong' and count(parameter)=1 and parameter[1][@type='long']]"
+      name="managedReturn">Okio.IBufferedSink</attr>
+
+
+  <remove-node path="/api/package[@name='com.squareup.okhttp.internal']/class[@name='Platform.Android']/constructor[@name='Platform.Android' and count(parameter)=6 and parameter[1][@type='com.squareup.okhttp.internal.OptionalMethod&lt;java.net.Socket&gt;'] and parameter[2][@type='com.squareup.okhttp.internal.OptionalMethod&lt;java.net.Socket&gt;'] and parameter[3][@type='java.lang.reflect.Method'] and parameter[4][@type='java.lang.reflect.Method'] and parameter[5][@type='com.squareup.okhttp.internal.OptionalMethod&lt;java.net.Socket&gt;'] and parameter[6][@type='com.squareup.okhttp.internal.OptionalMethod&lt;java.net.Socket&gt;']]" />
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']" name="managedName">Buffer</attr>
+-->
+
+  <!-- interface fixups -->
+  
+  <!-- 
+  <add-node path="/api/package[@name='okio']/interface[@name='BufferedSource']">
+    <method abstract="true" deprecated="not deprecated" final="false" name="close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      <exception name="IOException" type="java.io.IOException">
+      </exception>
+    </method>
+  </add-node>
+
+  <add-node path="/api/package[@name='okio']/interface[@name='BufferedSink']">
+    <method abstract="true" deprecated="not deprecated" final="false" name="close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      <exception name="IOException" type="java.io.IOException">
+      </exception>
+    </method>
+  </add-node>
+  <attr path="/api/package[@name='okio']/class[@name='Buffer']" name="managedName">OkBuffer</attr>
+  -->
+</metadata>

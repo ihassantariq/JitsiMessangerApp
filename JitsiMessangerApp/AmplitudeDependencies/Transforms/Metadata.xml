@@ -1,0 +1,16 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <remove-node path="/api/package[@name='org.bouncycastle.x509']/interface[@name='X509AttributeCertificate']" />
+
+  <remove-node path="/api/package[@name='org.bouncycastle.crypto.tls']/class[@name='BulkCipherAlgorithm']/field[@name='_3des']" />
+
+  <remove-node path="/api/package[@name='org.bouncycastle.crypto.tls']/class[@name='EncryptionAlgorithm']/field[@name='_3DES_EDE_CBC']" />
+
+  <remove-node path="/api/package[@name='org.bouncycastle.crypto.tls']/class[@name='EncryptionAlgorithm']/field[@name='_3DES_EDE_CBC']" />
+</metadata>

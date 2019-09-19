@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97AE1E4E-B0B6-43EA-A3E2-7F3C5F5C313A}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{84dd83c5-0fe3-4294-9419-09e7c8ba324f}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JitsiMeetAndroidSample</RootNamespace>
+    <AssemblyName>JitsiMeetAndroidSample</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidEnableDesugar>true</AndroidEnableDesugar>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
+    <MandroidI18n />
+    <AndroidLinkSkip>
+    </AndroidLinkSkip>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Java.Interop" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_main.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\content_main.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\menu\menu_main.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="glidex.forms">
+      <Version>1.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Auth">
+      <Version>71.1600.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AndroidJSCJitsi\AndroidJSCJitsi.csproj">
+      <Project>{d8d360e9-4b52-4157-a0c9-171125a16d35}</Project>
+      <Name>AndroidJSCJitsi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JitsiCore\JitsiAndroidSDK.csproj">
+      <Project>{45ddb690-aa34-4e31-9e92-470902eb5323}</Project>
+      <Name>JitsiAndroidSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JitsiMeetDependencies\JitsiMeetDependencies.csproj">
+      <Project>{453929ba-9957-423f-bd44-59906c80cbd2}</Project>
+      <Name>JitsiMeetDependencies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JitsiMessangerApp\JitsiMessangerApp.csproj">
+      <Project>{C7DC8624-44EB-4BDC-82DE-C9E88B942A25}</Project>
+      <Name>JitsiMessangerApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeBackgroundTimer\ReactNativeBackgroundTimer.csproj">
+      <Project>{3eb71994-3c27-4bb2-8844-8a1ff1e7a41a}</Project>
+      <Name>ReactNativeBackgroundTimer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeCalendarEvents\ReactNativeCalendarEvents.csproj">
+      <Project>{bc7edc33-4aa9-428d-9df7-ef5ab6021ae1}</Project>
+      <Name>ReactNativeCalendarEvents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeCommunityAsyncStorage\ReactNativeCommunityAsyncStorage.csproj">
+      <Project>{648241b9-2d32-4165-8f26-2735c4ec5605}</Project>
+      <Name>ReactNativeCommunityAsyncStorage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeFastImage\ReactNativeFastImage.csproj">
+      <Project>{e7404ec4-7188-4409-9e67-aae83174a3f4}</Project>
+      <Name>ReactNativeFastImage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeFetchBlob\ReactNativeFetchBlob.csproj">
+      <Project>{2ff1bc52-95e2-4750-8eef-7b296596ef95}</Project>
+      <Name>ReactNativeFetchBlob</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeGoogleSignin\ReactNativeGoogleSignin.csproj">
+      <Project>{ff52efbc-564e-4e59-bc85-97d1165aacf1}</Project>
+      <Name>ReactNativeGoogleSignin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeImmersive\ReactNativeImmersive.csproj">
+      <Project>{c3c53a54-c669-483e-9692-aa9ca3ce9971}</Project>
+      <Name>ReactNativeImmersive</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeJitsiDependencies\ReactNativeKeepAwake.csproj">
+      <Project>{81168e99-3e6c-4041-afb2-5b7c9bd35e3c}</Project>
+      <Name>ReactNativeKeepAwake</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeLinearGradient\ReactNativeLinearGradient.csproj">
+      <Project>{5f0fd4f0-5383-4f21-83a1-eb1459bc5c22}</Project>
+      <Name>ReactNativeLinearGradient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeLocaleDetector\ReactNativeLocaleDetector.csproj">
+      <Project>{b3a27d1e-993f-4d68-9305-2c6f3c00d889}</Project>
+      <Name>ReactNativeLocaleDetector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeSound\ReactNativeSound.csproj">
+      <Project>{0fc7de5e-15ec-413d-b442-afa1aa80bd07}</Project>
+      <Name>ReactNativeSound</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeVectorIcons\ReactNativeVectorIcons.csproj">
+      <Project>{dce6b7d2-a9d0-4469-955d-96641dd4cc05}</Project>
+      <Name>ReactNativeVectorIcons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeWebrtc\ReactNativeWebrtc.csproj">
+      <Project>{e806bfc1-fd3f-47d2-8dbc-bd250d2ed61d}</Project>
+      <Name>ReactNativeWebrtc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNativeWebview\ReactNativeWebview.csproj">
+      <Project>{42645c07-7a3a-48ca-9003-7bb342cd2635}</Project>
+      <Name>ReactNativeWebview</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactNative\ReactNative.csproj">
+      <Project>{9ab853bb-c9e5-4ce0-bfe5-3735f04f1e6d}</Project>
+      <Name>ReactNative</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeleniumGridExtras\SeleniumGridExtras.csproj">
+      <Project>{553fc3a4-54cc-428b-98ed-c291b2f465fb}</Project>
+      <Name>SeleniumGridExtras</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+  -->
+</Project>
