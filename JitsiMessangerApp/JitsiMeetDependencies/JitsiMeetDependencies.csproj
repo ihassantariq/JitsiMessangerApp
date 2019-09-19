@@ -95,6 +95,18 @@
   <ItemGroup>
     <EmbeddedJar Include="Jars\okhttp-3.12.1.jar" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\imagepipeline-base-1.5.0.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\fbcore-1.5.0.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\fresco-1.5.0.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\imagepipeline-1.5.0.jar" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
