@@ -1,9 +1,10 @@
 ﻿using Foundation;
 using System;
 using UIKit;
+using JitsiMeetIosSample;
 using JitsiMeetSDK;
 
-namespace SampleApp
+namespace JitsiMeetIosSample
 {
     public partial class ViewController : UIViewController
     {
